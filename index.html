@@ -100,7 +100,7 @@ h1{
 }
 .bank .k{font-size:12px;color:#8a7650;letter-spacing:1px}
 .bank .v{font-family:var(--serif);font-size:21px;font-weight:700;margin-top:1px}
-.bank img{height:54px;width:auto;display:block}
+.bank img{height:54px;width:auto;display:block;mix-blend-mode:multiply}
 
 /* الحقول */
 .field{
@@ -113,8 +113,8 @@ h1{
 .field .k{font-size:12px;color:var(--gold);letter-spacing:1.5px;margin-bottom:6px;font-weight:500}
 .field .v{font-family:var(--serif);font-size:21px;font-weight:700;line-height:1.5;color:var(--text);word-break:break-word}
 .field .v.num{
-  font-family:"Tajawal",Consolas,monospace;font-weight:700;font-size:23px;letter-spacing:2.5px;
-  direction:ltr;text-align:right;color:var(--gold-soft);
+  font-family:"Tajawal",Consolas,monospace;font-weight:700;font-size:21px;letter-spacing:1.5px;
+  direction:ltr;text-align:right;color:var(--gold-soft);white-space:nowrap;
 }
 .copy{
   flex:none;cursor:pointer;font:inherit;font-size:14px;font-weight:700;letter-spacing:.5px;
@@ -141,7 +141,8 @@ h1{
 
 @media (max-width:380px){
   h1{font-size:23px}
-  .field .v.num{font-size:19px;letter-spacing:1.5px}
+  .field .v.num{font-size:17px;letter-spacing:1px}
+  .copy{padding:11px 14px;min-width:68px}
   .field .v{font-size:18px}
 }
 </style>
